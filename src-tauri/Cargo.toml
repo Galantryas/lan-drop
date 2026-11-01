@@ -1,0 +1,29 @@
+[package]
+name = "lan-drop"
+version = "0.1.0"
+description = "LAN Drop & Peer Finder"
+authors = ["Senior Systems Engineer"]
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "2.0.0", features = [] }
+
+[dependencies]
+tauri = { version = "2.0.0", features = [] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1", features = ["full"] }
+tokio-util = { version = "0.7", features = ["io"] }
+axum = { version = "0.7", features = ["multipart"] }
+tower-http = { version = "0.5", features = ["cors"] }
+reqwest = { version = "0.12", features = ["stream", "multipart", "json"] }
+mdns-sd = "0.11"
+local-ip-address = "0.6"
+futures-util = "0.3"
+bytes = "1.7"
+arboard = "3.4"
+open = "5.3"
+rfd = "0.14"
+uuid = { version = "1.10", features = ["v4"] }
+hostname = "0.4"
+dirs = "5.0"
